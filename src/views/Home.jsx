@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from'../Components/Navbar'
+import Intro from'../Components/Intro'
 import'../App.css'
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       
    <div className="App">
     <Navbar/>
+    <Intro/>
    
     </div>
     </Container>

@@ -18,7 +18,7 @@ const Navbar = () => {
     </ul>
     </div>
     <button className="button n-button">
-        Contact me
+        Contact 
     </button>
  </div>
   </div>
@@ -68,7 +68,7 @@ cursor:pointer;
     color:#EB1D36;
     }
 .n-button{
-    flex:5;
+    flex:4;
  
 }
 

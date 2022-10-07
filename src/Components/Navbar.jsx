@@ -14,6 +14,7 @@ const Navbar = () => {
     <ul className="ul" style={{listStyleType: 'none'}}>
        
             <li>Home</li>
+             <li>Services</li>
            <li>Projects</li>
     </ul>
     </div>
@@ -53,7 +54,7 @@ const Container= styled.div`
 }
 .n-List{
     flex:10;
- margin-left:200px;
+ margin-left:90px;
 
 
 }
@@ -68,7 +69,7 @@ cursor:pointer;
     color:#EB1D36;
     }
 .n-button{
-    flex:4;
+    flex:3;
  
 }
 

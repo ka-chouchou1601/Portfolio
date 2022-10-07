@@ -52,9 +52,9 @@ const intro = () => {
 <div className="blur" style={{
   background:'#dc4848',
   top: '20rem',
-  left:'-10rem',
+  left:'-15rem',
   width:'11rem',
-  height:'5rem',
+  height:'8rem',
   
 }}>
 
@@ -100,7 +100,7 @@ const Container=styled.div`
 }
 .i-name>:nth-child(3){
     font-weight:100;
-    font-size: 14px;
+    font-size: 16px;
     color: gray;
     margin-top: 10px;
 }
@@ -142,15 +142,15 @@ gap: 1rem;
 }
 .blur{
   position:absolute;
-  width:22 rem;
+  width:26rem;
   height:14 rem;
   border-radius: 50%;
   background:#dc4848;
-  filter:blur(212px);
+  filter:blur(252px);
   z-index:-9;
   top:-18%;
   left:56%;
-  filter: blur(72px);
+  filter: blur(82px);
 
 }
 `

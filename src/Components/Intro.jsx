@@ -49,7 +49,7 @@ const intro = () => {
 
 </div> */}
 <div className="blur" style={{background: "rgb (238 210 255)"}} >
-<div className="blur" style={{
+{/* <div className="blur" style={{
   background:'#FEE0C0',
   top: '20rem',
   left:'-29rem',
@@ -58,7 +58,7 @@ const intro = () => {
   
 }}>
 
-</div>
+</div> */}
 </div>
 </div>
   </div>

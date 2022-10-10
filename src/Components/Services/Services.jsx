@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from './Card/Card'
-import happyE3 from'../img/happyE3.svg'
+import Card from '../Card'
+import glassesimoji from'../../img/glassesimoji.png'
+import Resume from './Resume.pdf'
 const Services = () => {
   return (
     <Container>
@@ -13,28 +14,34 @@ const Services = () => {
      <span>Lorem ipsum dolor sit amet consectetur adipisicing  iusto fuga praesentium
       <br/>
  iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. </span>
+
+ <a href={Resume} download>
   <button className="button s-button">Download cv</button>
+ </a>
+
   <div className="blur s-blur" style={{
     background: "#ABF1FF94"
 
   }}></div>
   </div>
 {/* this is the right side */}
-<div>
- <div>
-  <Card 
-  emoji={happyE3}
-  heading={'Front end development'}
+<div className='Cards'>
+ <div  className="Cards_1">
+  <Card
+  emoji={ glassesimoji}
+  heading={'Front end developer'}
   details={"React, javascript,css,chackra Ui, Styled Components"}
   />
  </div>
- <div>
+ {/* my second card */}
+  <div className="Cards_2" >
   <Card 
-  emoji={happyE3}
-  heading={'Back-end development'}
-  details={"React, javascript,css,chackra Ui, Styled Components"}
+  emoji={ glassesimoji}
+  heading={'Back end developer'}
+  details={"Node.js, express, MongoDB"}
   />
- </div>
+ </div> 
+ 
 </div>
  </div>
     </Container>
@@ -80,6 +87,25 @@ const Container= styled.div`
   width:8rem;
   height:2rem;
   margin-top:5px;
+}
+. Cards{
+  display:flex;
+  flex-direction: column;
+  position : absolute;
+ 
+  gap:20rem;
+}
+.Cards_1{
+  position:absolute;
+  left: 69%;
+
+  
+}
+.Cards_2{
+  position:relative;
+   
+  left:-4rem;
+  top:15rem;
 }
 `
 export default Services

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Navbar from'../Components/Navbar'
 import Intro from'../Components/Intro'
-import Services from'../Components/Services'
+import Services from'../Components/Services/Services'
 import'../App.css'
 const Home = () => {
   return (

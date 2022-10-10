@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import'../App.css'
 import FloatingDiv from './FloatingDiv'
 import Crown from'../img/Crown.png'
-import chouella from'../img/chouella.svg'
+import chouella3 from'../img/chouella3.svg'
 import thumbup from'../img/thumbup.png'
 import Github1 from'../img/Github1.svg'
 import Insta from'../img/Insta.svg'
 import LinkedIn1 from'../img/LinkedIn1.svg'
-import emoji2 from'../img/emoji2.jpg'
+
 const intro = () => {
   return (
     <Container>
@@ -37,24 +37,24 @@ const intro = () => {
 </div>
 <div className="i-right">
 
-  <img className="i-picture" src={chouella}/>
-<div style={{top: '7%', left:'70%'}}>
+  <img className="i-picture" src={chouella3}/>
+<div style={{top: '15%', left:'69%'}}>
 <FloatingDiv img={Crown} txt1={'Full Stack'} txt2={'developer'}/>
 </div>
 <div style={{top: '10rem', left:'4rem'}}>
   <FloatingDiv img={thumbup} txt1={' Let us '} txt2={'Work together'}/>
 </div>
-<div className="emoji">
+{/* <div className="emoji">
   <img src={emoji2}/>
 
-</div>
+</div> */}
 <div className="blur" style={{background: "rgb (238 210 255)"}} >
 <div className="blur" style={{
-  background:'#dc4848',
+  background:'#FEE0C0',
   top: '20rem',
-  left:'-15rem',
-  width:'11rem',
-  height:'8rem',
+  left:'-29rem',
+  width:'40rem',
+  height:'10rem',
   
 }}>
 
@@ -128,8 +128,8 @@ gap: 1rem;
   z-index:1;
 }
 .i-picture{
-  right:150px;
-  top:-20px;
+  right:-50px;
+  top:-40px;
 
 
 }

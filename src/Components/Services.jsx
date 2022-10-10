@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Card from './Card/Card'
+import happyE3 from'../img/happyE3.svg'
 const Services = () => {
   return (
     <Container>
@@ -18,8 +20,21 @@ const Services = () => {
   }}></div>
   </div>
 {/* this is the right side */}
-<div className="Cards">
-  I am the right side 
+<div>
+ <div>
+  <Card 
+  emoji={happyE3}
+  heading={'Front end development'}
+  details={"React, javascript,css,chackra Ui, Styled Components"}
+  />
+ </div>
+ <div>
+  <Card 
+  emoji={happyE3}
+  heading={'Back-end development'}
+  details={"React, javascript,css,chackra Ui, Styled Components"}
+  />
+ </div>
 </div>
  </div>
     </Container>
@@ -32,9 +47,10 @@ const Container= styled.div`
   display: flex;
   height: 90vh;
   margin-bottom: 8rem;
-  margin-top: 9rem;
+  margin-top: 7rem;
  
 }
+
 .awesome{
   display:flex;
   flex-direction: column;
@@ -47,6 +63,7 @@ const Container= styled.div`
   font-size:3rem;
   font-weight:bold;
 }
+
 .awesome>:nth-child(2) {
   color : #dc4848 ;
   font-size:3rem;
@@ -60,7 +77,9 @@ const Container= styled.div`
   
 }
 .s-button{
-  width:10rem
+  width:8rem;
+  height:2rem;
+  margin-top:5px;
 }
 `
 export default Services

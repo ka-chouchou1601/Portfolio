@@ -29,10 +29,10 @@ const Container= styled.div`
 
   padding-left:35px;
   padding-right:40px;
-  padding-top:0px;
-  padding-bottom:0px;
-  height:4.5rem;
-  gap:15px;
+
+  height:70px;
+  gap:10px;
+  
 
 }
 .Floatingdiv>img{
@@ -42,6 +42,7 @@ const Container= styled.div`
 .Floatingdiv>span{
   font-family:sans-serif;
   font-size:16px;
+
 }
 `
 export default FloatingDiv

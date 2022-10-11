@@ -1,23 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from '../Card'
-import glassesimoji from'../../img/glassesimoji.png'
-import Resume from './Resume.pdf'
-const Services = () => {
+import Card from './Card'
+import glassesimoji from'../img/glassesimoji.png'
+
+const Project = () => {
   return (
-    <Container>
- <div className="Services">
+<Container>
+<div className="Projects">
   {/* this is the left side */}
   <div className="awesome">
     <span>My Awesome</span>
-     <span>Services</span>
-     <span>Lorem ipsum dolor sit amet consectetur adipisicing  iusto fuga praesentium
-      <br/>
- iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. </span>
+     <span>Projects</span>
+     
 
- <a href={Resume} download>
-  <button className="button s-button">Download cv</button>
- </a>
+
+  
+
 
   <div className="blur s-blur" style={{
     background: "#ABF1FF94"
@@ -25,9 +23,7 @@ const Services = () => {
   }}></div>
   </div>
 {/* this is the right side */}
-
-
-{/* <div className='Cards'>
+<div className='Cards'>
  <div  className="Cards_1">
   <Card
   emoji={ glassesimoji}
@@ -35,7 +31,7 @@ const Services = () => {
   details={"React, javascript,css,chackra Ui, Styled Components"}
   />
  </div>
-
+ {/* my second card */}
   <div className="Cards_2" >
   <Card 
   emoji={ glassesimoji}
@@ -44,14 +40,15 @@ const Services = () => {
   />
  </div> 
  
-</div> */}
+</div>
  </div>
-    </Container>
-   
+
+</Container>
+    
   )
 }
 const Container= styled.div`
-.Services{
+.Projects{
   padding : 0 2rem 2rem;
   display: flex;
   height: 90vh;
@@ -85,7 +82,7 @@ const Container= styled.div`
   margin-top:10px;
   
 }
-.s-button{
+.p-button{
   width:8rem;
   height:2rem;
   margin-top:5px;
@@ -110,4 +107,4 @@ const Container= styled.div`
   top:15rem;
 }
 `
-export default Services
+export default Project

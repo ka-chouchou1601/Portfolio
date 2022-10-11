@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import'../App.css'
 import FloatingDiv from './FloatingDiv'
 import Crown from'../img/Crown.png'
-import chouella3 from'../img/chouella3.svg'
+import chouella5 from'../img/chouella5.png'
 import thumbup from'../img/thumbup.png'
 import Github1 from'../img/Github1.svg'
 import Insta from'../img/Insta.svg'
@@ -37,11 +37,11 @@ const intro = () => {
 </div>
 <div className="i-right">
 
-  <img className="i-picture" src={chouella3}/>
-<div style={{top: '15%', left:'69%'}}>
+  <img className="i-picture" src={chouella5}/>
+<div style={{top: '10%', left:'65%'}}>
 <FloatingDiv img={Crown} txt1={'Full Stack'} txt2={'developer'}/>
 </div>
-<div style={{top: '10rem', left:'4rem'}}>
+<div style={{top: '11rem', left:'4rem'}}>
   <FloatingDiv img={thumbup} txt1={' Let us '} txt2={'Work together'}/>
 </div>
 {/* <div className="emoji">
@@ -128,8 +128,9 @@ gap: 1rem;
   z-index:1;
 }
 .i-picture{
-  right:-50px;
-  top:-40px;
+  width:20rem;
+  right:100px;
+  top:-29px;
 
 
 }

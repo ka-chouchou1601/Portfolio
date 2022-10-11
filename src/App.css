@@ -3,7 +3,7 @@
 .App {
   padding: 0.5rem 3.5rem;
   overflow: hidden;
-  background-color:#FEE0C0 ;
+  background-color:#f8e7d4;
   color: var(--black);
 }
 .button{
@@ -18,7 +18,7 @@
 
 }
 .button:hover{
-  background: #FEE0C0;
+  background: #f8e7d4;
   cursor:pointer;
   color:#dc4848;
   border: 1px solid #dc4848;

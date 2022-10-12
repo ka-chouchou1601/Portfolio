@@ -27,7 +27,7 @@ const Services = () => {
 {/* this is the right side */}
 
 
-{/* <div className='Cards'>
+ <div className='Cards'>
  <div  className="Cards_1">
   <Card
   emoji={ glassesimoji}
@@ -44,7 +44,7 @@ const Services = () => {
   />
  </div> 
  
-</div> */}
+</div> 
  </div>
     </Container>
    
@@ -94,7 +94,6 @@ const Container= styled.div`
   display:flex;
   flex-direction: column;
   position : absolute;
- 
   gap:20rem;
 }
 .Cards_1{

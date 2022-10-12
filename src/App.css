@@ -4,8 +4,13 @@
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   background-color:#f8e7d4;
+
   color: var(--black);
 }
+T-Man{
+background-color: #fde8ce;
+}
+ 
 .button{
   border-radius:34px;
   border:none;
@@ -25,9 +30,7 @@
 }
 
 
-.card:hover {
-  background-color: pink;
-}
+
 
 /* .App {
   text-align: center;

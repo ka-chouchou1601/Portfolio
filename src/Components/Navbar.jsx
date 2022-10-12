@@ -11,11 +11,12 @@ const Navbar = () => {
     </div>
  <div className="n-right">
     <div className="n-List">
-    <ul className="ul" style={{listStyleType: 'none'}}>
+    <ul style={{listStyleType: 'none'}}>
        
             <li>Home</li>
              <li>Services</li>
            <li>Projects</li>
+           <li>Languages&Libraries</li>
     </ul>
     </div>
     <button className="button n-button">
@@ -54,17 +55,19 @@ const Container= styled.div`
 }
 .n-List{
     flex:10;
- margin-left:90px;
+
 
 
 }
 
-.ul{
+.n-List > ul{
 display:flex;
-        gap:2rem;
+  gap: 2rem;
+  margin-right: 4rem;
+        
        
    }
-.ul>li:hover{
+.n-List>ul>li:hover{
 cursor:pointer;
     color:#EB1D36;
     }

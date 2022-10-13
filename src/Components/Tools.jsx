@@ -49,6 +49,10 @@ const Tools = () => {
 </div>
 </div>
 
+
+
+
+
 </div>
  </div>
     </Container>
@@ -102,10 +106,11 @@ left:9rem;
 position:relative;
 width:18rem;
 height:18rem;
+border: 4px solid #dc4848;
 border-radius:100%;
 box-shadow:-79px 51px 60px rgba(0, 0, 0, 0.08);
 top:2rem;
-background: rgba(255, 255, 255, 0.32);
+background:rgba(255, 255, 255, 0.12);
 }
 .T-mainCircle>*{
   position:absolute;
@@ -123,6 +128,9 @@ background: rgba(255, 255, 255, 0.32);
 .T-mainCircle>:nth-child(3){
   Top:145px;
   Left:135px;
+  background:#dc4848;
+  border:none;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.6));
   
 }
 .T-mainCircle>:nth-child(4){
@@ -142,14 +150,15 @@ background: rgba(255, 255, 255, 0.32);
   height:5rem;
   position:absolute;
   border-radius:100%;
-  border: 5px solid rgba(255, 255, 255, 0.10) ;
+  border: 5px solid rgba(255, 255, 255, 0.15) ;
   display:flex;
   align-items:center;
   justify-content:center;
   background:none;
   background:#f8e7d4 ;
 }
-.
+
+
 
 `
 export default Tools

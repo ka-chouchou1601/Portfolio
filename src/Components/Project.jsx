@@ -111,7 +111,7 @@ const Container=styled.div`
    background: rgba(255, 255, 255, 0.66);
     border-radius: 20px;
     padding: 0px 0px 1rem 0px;
-gap:10px;
+gap:30px;
 
 p{
   color: gray;
@@ -119,7 +119,7 @@ p{
 }
 }
 .card:hover{
-  transform:scale(1.15);
+  transform:scale(1.2);
   transition:300ms ease-in;
 
 }

@@ -5,6 +5,7 @@ import Intro from'../Components/Intro'
 import Services from'../Components/Services/Services'
 import Project from'../Components/Project'
 import Tools from'../Components/Tools'
+import Contact from'../Components/Contact'
 import'../App.css'
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     
     <Tools/>
     <Project/> 
+    <Contact/>
      
     </div>
 

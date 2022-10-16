@@ -93,7 +93,11 @@ molestiae quas vel sint commodi repudiandae consequuntur
 <img src={Gechou} alt=""/>
 <div className="card_desc">
 <span>Gechou</span>
-<p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+<p style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi consequuntur</p>
 <a  href='' style={{textDecoration: 'none'}}>
   <button className="button p-button">

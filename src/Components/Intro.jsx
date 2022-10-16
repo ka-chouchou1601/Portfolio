@@ -11,7 +11,13 @@ import Insta from'../img/Insta.svg'
 import LinkedIn1 from'../img/LinkedIn1.svg'
 import {themeContext} from '../Context'
 import { useContext } from'react'
+import { motion } from'framer-motion'
+
 const Intro = () => {
+  // for the motion
+  const transition={duration:2 , type : 'spring'}
+
+// for the dark mode
     const theme =  useContext (themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -47,12 +53,20 @@ const Intro = () => {
 <div className="i-right">
 
   <img className="i-picture" src={chouellaF}/>
-<div style={{top: '10%', left:'65%'}}>
+<motion.div
+initial={{top:'4%',left:'74%'}}
+ whileInView={{ left: "68%" }}
+ transition={transition}
+ style={{top: '10%', left:'65%'}}>
 <FloatingDiv img={Crown} txt1={'Full Stack'} txt2={'developer'}/>
-</div>
-<div style={{top: '9rem', left:'4rem'}}>
+</motion.div>
+<motion.div
+initial={{top:'18rem',left:'9rem'}}
+ whileInView={{ left: "0rem",top:'8rem' }}
+ transition={transition}
+ style={{top: '9rem', left:'4rem'}}>
   <FloatingDiv img={thumbup} txt1={' Let us '} txt2={'Work together'}/>
-</div>
+</motion.div>
 {/* <div className="emoji">
   <img src={emoji2}/>
 

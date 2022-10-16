@@ -8,7 +8,11 @@ import javascript from '../img/javascript.png'
 import express from'../img/express.svg'
 import {themeContext} from '../Context'
 import { useContext } from'react'
+import { motion } from'framer-motion'
+
 const Tools = () => {
+
+    const transition={duration:2 , type : 'spring'}
     const theme =  useContext (themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -37,8 +41,15 @@ const Tools = () => {
   </div>
 
   {/* right side */}
-<div className="T-right">
-<div className="T-mainCircle">
+<div className="T-right"
+>
+<motion.div
+ initial={{ rotate: 50 }}
+ whileInView={{ rotate: 0}}
+viewport={{ margin: "-40px" }}
+ transition={{ duration: 3.5, type: "spring" }}
+
+ className="T-mainCircle">
 <div className="T-seCircle">
 <img src={react} alt=''/>
 </div>
@@ -54,7 +65,7 @@ const Tools = () => {
 <div className="T-seCircle mongo">
 <img src={mongodb} alt=''/>
 </div>
-</div>
+</motion.div>
 
 
 

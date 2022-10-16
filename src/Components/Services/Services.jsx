@@ -5,7 +5,10 @@ import glassesimoji from'../../img/glassesimoji.png'
 import Resume from './Resume.pdf'
 import {themeContext} from '../../Context'
 import { useContext } from'react'
+import { motion } from'framer-motion'
+
 const Services = () => {
+   const transition={duration:2 , type : 'spring'}
     const theme =  useContext (themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -37,21 +40,29 @@ const Services = () => {
 
 
  <div className='Cards'>
- <div  className="Cards_1">
+ <motion.div
+initial={{left:'25rem'}}
+          whileInView={{ left: "54rem" }}
+          transition={transition}
+   className="Cards_1">
   <Card
   emoji={ glassesimoji}
   heading={'Front end developer'}
   details={"React, javascript,css,chackra Ui, Styled Components"}
   />
- </div>
+ </motion.div>
 
-  <div className="Cards_2" >
+  <motion.div
+  initial={{ left: "-11rem", top: "12rem" }}
+          whileInView={{ left: "-4rem" }}
+          transition={transition}
+   className="Cards_2" >
   <Card 
   emoji={ glassesimoji}
   heading={'Back end developer'}
   details={"Node.js, express, MongoDB"}
   />
- </div> 
+ </motion.div> 
  
 </div> 
  </div>

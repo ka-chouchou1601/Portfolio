@@ -3,13 +3,22 @@ import styled from 'styled-components'
 import Card from '../Card'
 import glassesimoji from'../../img/glassesimoji.png'
 import Resume from './Resume.pdf'
+import {themeContext} from '../../Context'
+import { useContext } from'react'
 const Services = () => {
+    const theme =  useContext (themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <Container>
  <div className="Services">
   {/* this is the left side */}
   <div className="awesome">
-    <span>My Awesome</span>
+    <span 
+    style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>My Awesome</span>
      <span>Services</span>
      <span>Lorem ipsum dolor sit amet consectetur adipisicing  iusto fuga praesentium
       <br/>

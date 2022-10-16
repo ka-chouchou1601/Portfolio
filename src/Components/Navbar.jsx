@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import'../App.css'
+import Toogle from'./Toogle.jsx'
 const Navbar = () => {
   return (
     <Container>
   <div className="n-wrapper">
     <div className="n-left">
         <div className="n-name">Chouella</div>
-        <span>toggle</span>
+        <Toogle/>
     </div>
  <div className="n-right">
     <div className="n-List">

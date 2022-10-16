@@ -4,18 +4,27 @@ import'../App.css'
 import FloatingDiv from './FloatingDiv'
 import Crown from'../img/Crown.png'
 import chouella5 from'../img/chouella5.png'
+import chouellaF from'../img/chouellaF.png'
 import thumbup from'../img/thumbup.png'
 import Github1 from'../img/Github1.svg'
 import Insta from'../img/Insta.svg'
 import LinkedIn1 from'../img/LinkedIn1.svg'
-
-const intro = () => {
+import {themeContext} from '../Context'
+import { useContext } from'react'
+const Intro = () => {
+    const theme =  useContext (themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <Container>
   <div className="intro">
 <div className="i-left">
 <div className="i-name">
-  <span>Hey ! I Am  </span>  
+  <span  style={
+    {
+     
+      color: darkMode? 'white': ''
+    }
+   }>Hey ! I Am  </span>  
    <span>Chouella Kanyonga </span> 
    <span>I am a full Stack developer, with experience in front end using React
      ,Javascript and Backend using Node.js,Express and MongoDB </span>
@@ -37,11 +46,11 @@ const intro = () => {
 </div>
 <div className="i-right">
 
-  <img className="i-picture" src={chouella5}/>
+  <img className="i-picture" src={chouellaF}/>
 <div style={{top: '10%', left:'65%'}}>
 <FloatingDiv img={Crown} txt1={'Full Stack'} txt2={'developer'}/>
 </div>
-<div style={{top: '11rem', left:'4rem'}}>
+<div style={{top: '9rem', left:'4rem'}}>
   <FloatingDiv img={thumbup} txt1={' Let us '} txt2={'Work together'}/>
 </div>
 {/* <div className="emoji">
@@ -156,4 +165,4 @@ gap: 1rem;
 }
 `
 
-export default intro
+export default Intro

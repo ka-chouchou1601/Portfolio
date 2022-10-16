@@ -1,10 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {themeContext} from '../Context'
+import { useContext } from'react'
 const FloatingDiv = ({img,txt1, txt2}) => {
+  const theme =  useContext (themeContext);
+  const darkMode = theme.state.darkMode;
   return (
+
     <Container>
-<div className="Floatingdiv">
+<div className="Floatingdiv"
+ style={
+    {
+     
+      color: darkMode? 'black': 'black'
+    }
+   }>
     <img src={img}/>
     <span>
         {/* passing them as props */}
@@ -42,6 +52,7 @@ const Container= styled.div`
 .Floatingdiv>span{
   font-family:sans-serif;
   font-size:16px;
+
 
 }
 `

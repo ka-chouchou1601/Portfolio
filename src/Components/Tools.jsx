@@ -6,14 +6,21 @@ import node from'../img/node.svg'
 import mongodb from '../img/mongodb.png'
 import javascript from '../img/javascript.png'
 import express from'../img/express.svg'
-
+import {themeContext} from '../Context'
+import { useContext } from'react'
 const Tools = () => {
+    const theme =  useContext (themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <Container>
  <div className="Tools">
   {/* left side */}
      <div className="awesome">
-    <span>Languages&</span>
+    <span style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>Languages&</span>
      <span>Libraries</span>
      <span>Lorem ipsum dolor sit amet consectetur adipisicing  iusto fuga praesentium
       <br/>

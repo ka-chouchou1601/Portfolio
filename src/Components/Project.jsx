@@ -7,12 +7,22 @@ import weshare from '../img/weshare.png'
 import { Swiper,SwiperSlide } from 'swiper/react'
 import GoTo from '../img/GoTo.png'
 import 'swiper/css';
+import {themeContext} from '../Context'
+import { useContext } from'react'
+
 const Project = () => {
+   const theme =  useContext (themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <Container>
 <div className="Projects">
 {/* heading */}
-<span>Recent Projets</span>
+<span
+ style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>Recent Projets</span>
 <span>Portolio</span>
 {/* slider */}
 <Swiper
@@ -25,7 +35,11 @@ className={'Projects-slider'}
 <img src={Chousnellor} alt=""/>
 <div className="card_desc">
 <span>Chousnellor</span>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+<p style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntu</p>
 <a  href='http://chousnellor.herokuapp.com/' style={{textDecoration: 'none'}}>
   <button  className="button p-button">
@@ -37,8 +51,12 @@ molestiae quas vel sint commodi repudiandae consequuntu</p>
 <img src={Gechou} alt="" />
 <div className="card_desc">
 <span>Gechou</span>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+<p style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur 
 </p>
 <a  href='' style={{textDecoration: 'none'}}>
   <button  className="button p-button" >
@@ -52,8 +70,12 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 <img src={weshare} alt=""/>
 <div className="card_desc">
 <span>WeShare</span>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+<p style={
+    {
+     
+      color: darkMode? 'white': ''
+    } }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur 
 </p>
 
   <a href='https://quiet-shape-6288.on.fleek.co/' style={{textDecoration: 'none'}}>
@@ -71,7 +93,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 <img src={Gechou} alt=""/>
 <div className="card_desc">
 <span>Gechou</span>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+<p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi consequuntur</p>
 <a  href='' style={{textDecoration: 'none'}}>
   <button className="button p-button">

@@ -60,5 +60,10 @@ gap:10px;
     transform: scale(1.1);
     cursor: pointer;
 }
+@media screen and (max-width: 1000px){
+  .card{
+    width: auto;
+  }
+}
 `
 export default Card

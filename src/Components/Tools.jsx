@@ -17,7 +17,7 @@ const Tools = () => {
   const darkMode = theme.state.darkMode;
   return (
     <Container>
- <div className="Tools">
+ <div className="Tools" id="Tools">
   {/* left side */}
      <div className="awesome">
     <span style={
@@ -176,7 +176,26 @@ background:rgba(255, 255, 255, 0.12);
   background:#f8e7d4 ;
 }
 
+@media screen and (max-width:1000px){
+  .Tools{
+   
+    flex-direction:column;
+    height:40rem;
+     margin-top:35rem;
+    padding:0;
+    gap:5rem;
+  }
+   .T-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content:start;
+    transform: scale(0.8);
+  }
+  .T-mainCircle{
+    position: static;
+  }
 
+}
 
 `
 export default Tools

@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import'../App.css'
 import Toogle from'./Toogle.jsx'
+import {Link} from 'react-scroll'
+
 const Navbar = () => {
   return (
     <Container>
-  <div className="n-wrapper">
+  <div className="n-wrapper" id='Navbar'>
     <div className="n-left">
         <div className="n-name">Chouella</div>
         <Toogle/>
@@ -13,16 +15,28 @@ const Navbar = () => {
  <div className="n-right">
     <div className="n-List">
     <ul style={{listStyleType: 'none'}}>
-       
-            <li>Home</li>
+       <Link spy={true} to="Navbar" smooth={true}activeClass="activeClass" className="Link">
+ <li>Home</li>
+       </Link>
+            <Link spy={true} to="Services" smooth={true} className="Link"> 
              <li>Services</li>
-           <li>Projects</li>
-           <li>Languages&Libraries</li>
+             </Link>
+           
+              <Link spy={true} to="Project" smooth={true} className="Link">
+                <li>Projects</li>
+              </Link>
+            <Link spy={true} to="Tools" smooth={true} className="Link">
+               <li>Languages&Libraries</li>
+            </Link>
+          
     </ul>
     </div>
-    <button className="button n-button">
+       <Link spy={true} to="contact" smooth={true} className="Link">
+<button className="button n-button">
         Contact 
     </button>
+       </Link>
+    
  </div>
   </div>
     </Container>
@@ -65,16 +79,29 @@ const Container= styled.div`
 display:flex;
   gap: 2rem;
   margin-right: 4rem;
-        
+ cursor:pointer;
        
    }
-.n-List>ul>li:hover{
+
+.Link:hover{
 cursor:pointer;
     color:#EB1D36;
-    }
+}
 .n-button{
     flex:3;
  
+}
+
+@media screen and (max-width: 1000px){
+  .n-left{
+    margin-left:40px;
+  }
+  .n-List{
+    display: none;
+  }
+  .n-button{
+    display:none;
+  }
 }
 
 `

@@ -6,14 +6,14 @@ import Resume from './Resume.pdf'
 import {themeContext} from '../../Context'
 import { useContext } from'react'
 import { motion } from'framer-motion'
-
+import'../../App.css'
 const Services = () => {
    const transition={duration:2 , type : 'spring'}
     const theme =  useContext (themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <Container>
- <div className="Services">
+ <div className="Services" id="Services">
   {/* this is the left side */}
   <div className="awesome">
     <span 
@@ -60,7 +60,7 @@ initial={{left:'25rem'}}
   <Card 
   emoji={ glassesimoji}
   heading={'Back end developer'}
-  details={"Node.js, express, MongoDB"}
+  details={"Node.js, express, MongoDB, StyledComponents,css"}
   />
  </motion.div> 
  
@@ -128,5 +128,40 @@ const Container= styled.div`
   left:-4rem;
   top:15rem;
 }
+@media screen and (max-width:490px){
+.Services{
+  margin-top: 18rem;
+  flex-direction: column;
+  gap:5rem;
+  
+  .Cards{
+    
+    display:flex;
+    flex-direction:column;
+gap:16rem;
+  }
+  .Cards>*{
+    position:static;
+  }
+}
+
+}
+@media screen and (max-width:1000px){
+.Services{
+  margin-top: 18rem;
+  flex-direction: column;
+  gap:5rem;
+  
+  .Cards{
+    
+    display:flex;
+    flex-direction:column;
+     gap:16rem;
+  }
+  .Cards>*{
+    position:static;
+  }
+}
+
 `
 export default Services

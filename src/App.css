@@ -1,11 +1,11 @@
 
 
 .App {
-  padding: 0rem 3.5rem;
   overflow: hidden;
-  background-color:#f8e7d4;
-
+  padding: 0rem 3.5rem;
+  background:#f8e7d4;
   color: var(--black);
+
 }
 
  
@@ -27,7 +27,13 @@
   border: 1px solid #dc4848;
 }
 
+@media screen and (max-width: 480px){
 
+  .App{
+      
+    padding:0.5rem 1rem;
+  }
+}
 
 
 /* .App {

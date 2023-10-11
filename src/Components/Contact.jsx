@@ -128,5 +128,17 @@ textarea{
   height:2rem;
   margin-top:5px;
 }
+@media screen and (max-width: 1000px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+
+}
 `
 export default Contact

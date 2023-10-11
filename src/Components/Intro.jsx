@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import'../App.css'
 import FloatingDiv from './FloatingDiv'
 import Crown from'../img/Crown.png'
-import chouella5 from'../img/chouella5.png'
+
 import chouellaF from'../img/chouellaF.png'
 import thumbup from'../img/thumbup.png'
 import Github1 from'../img/Github1.svg'
@@ -12,7 +12,7 @@ import LinkedIn1 from'../img/LinkedIn1.svg'
 import {themeContext} from '../Context'
 import { useContext } from'react'
 import { motion } from'framer-motion'
-
+import { Link } from 'react-scroll'
 const Intro = () => {
   // for the motion
   const transition={duration:2 , type : 'spring'}
@@ -35,7 +35,10 @@ const Intro = () => {
    <span>I am a full Stack developer, with experience in front end using React
      ,Javascript and Backend using Node.js,Express and MongoDB </span>
 </div>
-<button className='button i-button'>Hire me</button>
+<Link spy={true} to="contact" smooth={true}activeClass="activeClass" >
+  <button className='button i-button'>Hire me</button>
+</Link>
+
 <div className="i-icons">
   <a href='https://github.com/ka-chouchou1601'>
      <img src={Github1} />
@@ -57,14 +60,17 @@ const Intro = () => {
 initial={{top:'4%',left:'74%'}}
  whileInView={{ left: "68%" }}
  transition={transition}
- style={{top: '10%', left:'65%'}}>
+ style={{top: '10%', left:'65%'}}
+ className="floating-div"
+ >
 <FloatingDiv img={Crown} txt1={'Full Stack'} txt2={'developer'}/>
 </motion.div>
 <motion.div
 initial={{top:'18rem',left:'9rem'}}
  whileInView={{ left: "0rem",top:'8rem' }}
  transition={transition}
- style={{top: '9rem', left:'4rem'}}>
+ style={{top: '9rem', left:'4rem'}}
+  className="floating-div">
   <FloatingDiv img={thumbup} txt1={' Let us '} txt2={'Work together'}/>
 </motion.div>
 {/* <div className="emoji">
@@ -176,6 +182,30 @@ gap: 1rem;
   left:56%;
   filter: blur(82px);
 
+}
+@media screen and (max-width:1000px){
+ 
+  .intro{
+    flex-direction:column;
+    margin-left:40px;
+
+   
+  }
+  .i-right{
+    top:3rem;
+    transform:scale(0.8);
+left:5px;
+  }
+  .i-name>:nth-child(3){
+    width:250px;
+  }
+  .floating-div:nth-of-type(1){
+top:-7rem ;
+margin-left:-85px;
+  }
+    .floating-div:nth-of-type(2){
+      margin-left:-120px;
+    }
 }
 `
 

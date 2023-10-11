@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import'../App.css'
 import Insta from'@iconscout/react-unicons/icons/uil-instagram'
 import Github from'@iconscout/react-unicons/icons/uil-github'
 import Linkedin from'@iconscout/react-unicons/icons/uil-linkedin'
@@ -52,6 +52,22 @@ height:100%;
 .f-icons {
   display: flex;
   gap: 2rem;
+}
+@media screen and (max-width: 1000px){
+  .footer{
+    overflow:hidden;
+  }
+  .f-content{
+    transform: scale(0.9);
+    left:-45px;
+ top:-5px;
+ gap:0px;
+  }
+  .f-icons {
+   width:10rem;
+
+  }
+
 }
 `
 export default Footer

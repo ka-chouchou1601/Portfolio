@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {themeContext} from '../Context'
 import { useContext } from'react'
+import'../App.css'
+
 const FloatingDiv = ({img,txt1, txt2}) => {
   const theme =  useContext (themeContext);
   const darkMode = theme.state.darkMode;

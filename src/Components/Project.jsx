@@ -15,7 +15,7 @@ const Project = () => {
   const darkMode = theme.state.darkMode;
   return (
     <Container>
-<div className="Projects">
+<div className="Projects" id="Project">
 {/* heading */}
 <span
  style={
@@ -27,12 +27,32 @@ const Project = () => {
 {/* slider */}
 <Swiper
 spaceBetween={30}
-slidesPerView={3}
+slidesPerView={1}
 grabCursor={true}
 className={'Projects-slider'}
+
+breakpoints={{
+  920: {
+  slidesPerView:3,
+  spaceBetween:30,
+  grabCursor:true
+ },
+  800:{
+slidesPerView:2,
+spaceBetween:10,
+  grabCursor:true
+ },
+
+  
+}}
+
+
+  
+
+
 >
   <SwiperSlide className='card'>
-<img src={Chousnellor} alt=""/>
+<img src={Chousnellor}  className="card_image"  alt=""/>
 <div className="card_desc">
 <span>Chousnellor</span>
 <p style={
@@ -48,8 +68,9 @@ molestiae quas vel sint commodi repudiandae consequuntu</p>
 </div>
   </SwiperSlide>
    <SwiperSlide className='card'>
-<img src={Gechou} alt="" />
+ <img src={Gechou} className="card_image" alt="" />
 <div className="card_desc">
+ 
 <span>Gechou</span>
 <p style={
     {
@@ -67,8 +88,9 @@ molestiae quas vel sint commodi repudiandae consequuntur
 
 
    <SwiperSlide className="card" >
-<img src={weshare} alt=""/>
+  <img src={weshare}    alt=""/>
 <div className="card_desc">
+
 <span>WeShare</span>
 <p style={
     {
@@ -89,9 +111,10 @@ molestiae quas vel sint commodi repudiandae consequuntur
   </SwiperSlide>
 
 
-  <SwiperSlide className='card'>
-<img src={Gechou} alt=""/>
+  <SwiperSlide className="card">
+      <img src={Gechou}  alt=""/>
 <div className="card_desc">
+  
 <span>Gechou</span>
 <p style={
     {
@@ -157,6 +180,8 @@ color: black;
 }
 .card_desc{
 margin:20px;
+display:flex;
+flex-direction:column;
 img{
   width:10px;
 }
@@ -211,5 +236,18 @@ img{
      border: 1px solid #dc4848;
 
 }
+
+
+ @media screen and (min-width:550px)and(max-width:830px){
+  .card_image{
+   
+      width:1rem;
+
+  
+ }
+ .p-button{
+  margin-left: 500px;
+  
+ }
 `
 export default Project

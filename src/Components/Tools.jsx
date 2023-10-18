@@ -98,7 +98,7 @@ const Tools = () => {
 }
 const Container = styled.div`
   .Tools {
-    padding: 0 2rem 2rem;
+    padding: 0 0rem 0rem;
     display: flex;
     height: 90vh;
     margin-bottom: 8rem;
@@ -142,7 +142,7 @@ const Container = styled.div`
     position: relative;
   }
   .T-mainCircle {
-    left: 9rem;
+    left: 5rem;
     position: relative;
     width: 18rem;
     height: 18rem;

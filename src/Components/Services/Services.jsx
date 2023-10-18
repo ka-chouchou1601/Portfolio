@@ -55,8 +55,8 @@ const Services = () => {
 
         <div className="Cards">
           <motion.div
-            initial={{ left: "28rem" }}
-            whileInView={{ left: "54rem" }}
+            initial={{ left: "19rem" }}
+            whileInView={{ left: "43rem" }}
             transition={transition}
             className="Cards_1"
           >
@@ -70,7 +70,7 @@ const Services = () => {
           </motion.div>
 
           <motion.div
-            initial={{ left: "-11rem", top: "14rem" }}
+            initial={{ left: "-10rem", top: "14rem" }}
             whileInView={{ left: "-4rem" }}
             transition={transition}
             className="Cards_2"
@@ -104,7 +104,7 @@ const Services = () => {
 }
 const Container = styled.div`
 .Services{
-  padding : 0 2rem 2rem;
+  padding : 0 0rem 0rem;
   display: flex;
   height: 90vh;
   margin-bottom: 8rem;

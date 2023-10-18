@@ -13,62 +13,72 @@ const Services = () => {
   const darkMode = theme.state.darkMode;
   return (
     <Container>
- <div className="Services" id="Services">
-  {/* this is the left side */}
-  <div className="awesome">
-    <span 
-    style={
-    {
-     
-      color: darkMode? 'white': ''
-    } }>My Awesome</span>
-     <span>Services</span>
-     <span>Lorem ipsum dolor sit amet consectetur adipisicing  iusto fuga praesentium
-      <br/>
- iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. </span>
+      <div className="Services" id="Services">
+        {/* this is the left side */}
+        <div className="awesome">
+          <span
+            style={{
+              color: darkMode ? "white" : "",
+            }}
+          >
+            My Remarkable
+          </span>
+          <span>abilities</span>
+          <span>
+            I bring a versatile skill set spanning front-end development (React
+            Js, JavaScript, CSS, HTML), <br />
+            back-end technologies (NodeJs, Express, MongoDB), and data analytics
+            (Python, SQL, Tableau, PowerBI, Excel). <br />
+            I also excel in organization, communication, and problem-solving,
+            making me an adaptable <br />
+            problem-solver, ready to contribute to any IT project.
+          </span>
 
- <a href={Resume} download>
-  <button className="button s-button">Download cv</button>
- </a>
+          <a href={Resume} download>
+            <button className="button s-button">Download cv</button>
+          </a>
 
-  <div className="blur s-blur" style={{
-    background: "#ABF1FF94"
+          <div
+            className="blur s-blur"
+            style={{
+              background: "#ABF1FF94",
+            }}
+          ></div>
+        </div>
+        {/* this is the right side */}
 
-  }}></div>
-  </div>
-{/* this is the right side */}
+        <div className="Cards">
+          <motion.div
+            initial={{ left: "29rem" }}
+            whileInView={{ left: "54rem" }}
+            transition={transition}
+            className="Cards_1"
+          >
+            <Card
+              emoji={glassesimoji}
+              heading={"Front & Back-end developer"}
+              details={
+                "React, javascript,css,chackra Ui, Styled Components,Node.js,express, MongoDB,"
+              }
+            />
+          </motion.div>
 
-
- <div className='Cards'>
- <motion.div
-initial={{left:'25rem'}}
-          whileInView={{ left: "54rem" }}
-          transition={transition}
-   className="Cards_1">
-  <Card
-  emoji={ glassesimoji}
-  heading={'Front end developer'}
-  details={"React, javascript,css,chackra Ui, Styled Components"}
-  />
- </motion.div>
-
-  <motion.div
-  initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
-          transition={transition}
-   className="Cards_2" >
-  <Card 
-  emoji={ glassesimoji}
-  heading={'Back end developer'}
-  details={"Node.js, express, MongoDB, StyledComponents,css"}
-  />
- </motion.div> 
- 
-</div> 
- </div>
+          <motion.div
+            initial={{ left: "-11rem", top: "12rem" }}
+            whileInView={{ left: "-4rem" }}
+            transition={transition}
+            className="Cards_2"
+          >
+            <Card
+              emoji={glassesimoji}
+              heading={"Data Analyst"}
+              details={" Python, SQL, Tableau, PowerBI, Excel "}
+            />
+          </motion.div>
+        </div>
+      </div>
     </Container>
-   
-  )
+  );
 }
 const Container= styled.div`
 .Services{
@@ -108,7 +118,7 @@ const Container= styled.div`
 .s-button{
   width:8rem;
   height:2rem;
-  margin-top:5px;
+  margin-top:7px;
 }
 . Cards{
   display:flex;

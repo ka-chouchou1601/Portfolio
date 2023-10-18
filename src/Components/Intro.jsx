@@ -22,63 +22,75 @@ const Intro = () => {
   const darkMode = theme.state.darkMode;
   return (
     <Container>
-  <div className="intro">
-<div className="i-left">
-<div className="i-name">
-  <span  style={
-    {
-     
-      color: darkMode? 'white': ''
-    }
-   }>Hey ! I Am  </span>  
-   <span>Chouella Kanyonga </span> 
-   <span>I am a full Stack developer, with experience in front end using React
-     ,Javascript and Backend using Node.js,Express and MongoDB </span>
-</div>
-<Link spy={true} to="contact" smooth={true}activeClass="activeClass" >
-  <button className='button i-button'>Hire me</button>
-</Link>
+      <div className="intro">
+        <div className="i-left">
+          <div className="i-name">
+            <span
+              style={{
+                color: darkMode ? "white" : "",
+              }}
+            >
+              Hey ! I Am{" "}
+            </span>
+            <span>Chouella Kanyonga </span>
+            <span>
+              Student in Master's Management at IAE, with a concentration in
+              Information Systems and Digital Innovation, passionate about
+              technology and data management, seeking opportunities in Data
+              Analytics, IT project management, and Business Analysis to help
+              companies achieve their goals
+            </span>
+          </div>
+          <Link spy={true} to="contact" smooth={true} activeClass="activeClass">
+            <button className="button i-button">Hire me</button>
+          </Link>
 
-<div className="i-icons">
-  <a href='https://github.com/ka-chouchou1601'>
-     <img src={Github1} />
-  </a>
-    <a href='https://www.instagram.com/kchouella/'>
-      <img src={Insta} />
-    </a>
-<a href='https://www.linkedin.com/in/kanyonga-chouella-6790911a8/'>
-<img src={LinkedIn1} />
-</a>
-
-</div>
-
-</div>
-<div className="i-right">
-
-  <img className="i-picture" src={chouellaF}/>
-<motion.div
-initial={{top:'4%',left:'74%'}}
- whileInView={{ left: "68%" }}
- transition={transition}
- style={{top: '10%', left:'65%'}}
- className="floating-div"
- >
-<FloatingDiv img={Crown} txt1={'Full Stack'} txt2={'developer'}/>
-</motion.div>
-<motion.div
-initial={{top:'18rem',left:'9rem'}}
- whileInView={{ left: "0rem",top:'8rem' }}
- transition={transition}
- style={{top: '9rem', left:'4rem'}}
-  className="floating-div">
-  <FloatingDiv img={thumbup} txt1={' Let us '} txt2={'Work together'}/>
-</motion.div>
-{/* <div className="emoji">
+          <div className="i-icons">
+            <a href="https://github.com/ka-chouchou1601">
+              <img src={Github1} />
+            </a>
+            <a href="https://www.instagram.com/kchouella/">
+              <img src={Insta} />
+            </a>
+            <a href="https://www.linkedin.com/in/kanyonga-chouella-6790911a8/">
+              <img src={LinkedIn1} />
+            </a>
+          </div>
+        </div>
+        <div className="i-right">
+          <img className="i-picture" src={chouellaF} />
+          <motion.div
+            initial={{ top: "4%", left: "9rem" }}
+            whileInView={{ left: "68%" }}
+            transition={transition}
+            style={{ top: "10%", left: "62%" }}
+            className="floating-div"
+          >
+            <FloatingDiv
+              img={thumbup}
+              txt1={" Let's work"}
+              txt2={"together"}
+            />
+          </motion.div>
+          <motion.div
+            initial={{ top: "18rem", left: "9rem" }}
+            whileInView={{ left: "0rem", top: "8rem" }}
+            transition={transition}
+            style={{ top: "9rem", left: "4rem" }}
+            className="floating-div"
+          >
+            <FloatingDiv
+              img={Crown}
+              txt1={"I'm the right fit"}
+              txt2={"for your team"}
+            />
+          </motion.div>
+          {/* <div className="emoji">
   <img src={emoji2}/>
 
 </div> */}
-<div className="blur" style={{background: "rgb (238 210 255)"}} >
-{/* <div className="blur" style={{
+          <div className="blur" style={{ background: "rgb (238 210 255)" }}>
+            {/* <div className="blur" style={{
   background:'#FEE0C0',
   top: '20rem',
   left:'-29rem',
@@ -88,12 +100,11 @@ initial={{top:'18rem',left:'9rem'}}
 }}>
 
 </div> */}
-</div>
-</div>
-  </div>
+          </div>
+        </div>
+      </div>
     </Container>
-  
-  )
+  );
 }
 const Container=styled.div`
 .intro{

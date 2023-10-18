@@ -21,17 +21,23 @@ const Services = () => {
               color: darkMode ? "white" : "",
             }}
           >
-            My Remarkable
+            My Outstanding
           </span>
-          <span>abilities</span>
+          <span>Experience</span>
           <span>
-            I bring a versatile skill set spanning front-end development (React
-            Js, JavaScript, CSS, HTML), <br />
-            back-end technologies (NodeJs, Express, MongoDB), and data analytics
-            (Python, SQL, Tableau, PowerBI, Excel). <br />
-            I also excel in organization, communication, and problem-solving,
-            making me an adaptable <br />
-            problem-solver, ready to contribute to any IT project.
+            I have gained extensive experience working with two companies, Alero
+            and Aclis, one based in Kenya <br />
+            and the other in Burundi, where I served as a developer. In this
+            role, I specialized in analyzing client <br />
+            requirements and proficiently developed and tested both front-end
+            and back-end applications,
+            <br /> utilizing modern technologies. Additionally, I've had the{" "}
+            opportunity to collaborate remotely <br />
+            with iProsper, a Canadian-based company. In this capacity, I
+            provided support in system <br />
+            management, website updates,instance creation, custom data forms{" "}
+            <br /> development, and social media post management."
+           
           </span>
 
           <a href={Resume} download>
@@ -49,38 +55,54 @@ const Services = () => {
 
         <div className="Cards">
           <motion.div
-            initial={{ left: "29rem" }}
+            initial={{ left: "28rem" }}
             whileInView={{ left: "54rem" }}
             transition={transition}
             className="Cards_1"
           >
             <Card
               emoji={glassesimoji}
-              heading={"Front & Back-end developer"}
+              heading={"Aclis & Alero developer"}
               details={
-                "React, javascript,css,chackra Ui, Styled Components,Node.js,express, MongoDB,"
+                "Analyzing client needs, developing  and testing both front-end and back-end applications using modern technologies."
               }
             />
           </motion.div>
 
           <motion.div
-            initial={{ left: "-11rem", top: "12rem" }}
+            initial={{ left: "-11rem", top: "14rem" }}
             whileInView={{ left: "-4rem" }}
             transition={transition}
             className="Cards_2"
           >
             <Card
               emoji={glassesimoji}
-              heading={"Data Analyst"}
-              details={" Python, SQL, Tableau, PowerBI, Excel "}
+              heading={"Back-up admin in prosper"}
+              details={
+                " Assisting with iProsper system management and website updates, assisting with instance creation, custom data forms creation with  iProsper, and managing social media posts. "
+              }
             />
           </motion.div>
+          {/* <motion.div
+            initial={{ left: "-13rem", top: "20rem" }}
+            whileInView={{ left: "-4rem" }}
+            transition={transition}
+            className="Cards_3"
+          >
+            <Card
+              emoji={glassesimoji}
+              heading={"Interpreter"}
+              details={
+                "As an interpreter, I have been involved in assisting clients in hospitals, schools, welfare agencies, among others"
+              }
+            />
+          </motion.div> */}
         </div>
       </div>
     </Container>
   );
 }
-const Container= styled.div`
+const Container = styled.div`
 .Services{
   padding : 0 2rem 2rem;
   display: flex;
@@ -120,24 +142,17 @@ const Container= styled.div`
   height:2rem;
   margin-top:7px;
 }
-. Cards{
-  display:flex;
-  flex-direction: column;
-  position : absolute;
-  gap:20rem;
-}
+
 .Cards_1{
   position:absolute;
-  left: 69%;
-
   
 }
 .Cards_2{
   position:relative;
-   
   left:-4rem;
   top:15rem;
 }
+
 @media screen and (max-width:490px){
 .Services{
   margin-top: 18rem;
@@ -173,5 +188,5 @@ gap:16rem;
   }
 }
 
-`
-export default Services
+`;
+export default Services;

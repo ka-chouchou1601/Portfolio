@@ -9,7 +9,7 @@ const Card = ({emoji,heading,details}) => {
     <span>{heading}</span>
 <span>{details}</span>
 
- <button className="button c-button">LEARN MORE</button>
+ {/* <button className="button c-button">LEARN MORE</button> */}
     </div>
    
     </Container>
@@ -19,8 +19,8 @@ const Card = ({emoji,heading,details}) => {
 }
 const Container= styled.div`
 .card {
-    width: 10rem;
-    height: 12rem;
+    width: 11rem;
+    height: 15.5rem;
     position: absolute;
     display: flex;
     flex-direction: column;

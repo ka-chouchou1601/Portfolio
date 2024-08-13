@@ -296,12 +296,12 @@ const Project = () => {
                   color: darkMode ? "white" : "",
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntu
+                In this project, I built a web app for translating medical
+                terminology into any language, ensuring precise and effective
+                communication in multilingual medical settings.
               </p>
               <a
-                href="http://chousnellor.herokuapp.com/"
+                href="https://demo-orcin-tau.vercel.app/"
                 style={{ textDecoration: "none" }}
               >
                 <button className="button p-button">
@@ -320,9 +320,9 @@ const Project = () => {
                   color: darkMode ? "white" : "",
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur
+                I developed Gechou, an e-commerce site for women’s products,
+                skincare, hygiene, contraceptives, focused on easy, anonymous
+                access in developing countries.
               </p>
               <a href="" style={{ textDecoration: "none" }}>
                 <button className="button p-button">
@@ -342,36 +342,15 @@ const Project = () => {
                   color: darkMode ? "white" : "",
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur
+                I created "We Share" , a ride-sharing app for the Burundian
+                community, designed to help people find lifts amid fuel
+                shortages and allow drivers to earn extra income.
               </p>
 
               <a
                 href="https://quiet-shape-6288.on.fleek.co/"
                 style={{ textDecoration: "none" }}
               >
-                <button className="button p-button">
-                  <img src={GoTo} />
-                  Go To
-                </button>
-              </a>
-            </div>
-          </SwiperSlide>
-          {/* .... */}
-          <SwiperSlide className="card">
-            <img src={Gechou} alt="" />
-            <div className="card_desc">
-              <span>Gechou</span>
-              <p
-                style={{
-                  color: darkMode ? "white" : "",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi consequuntur
-              </p>
-              <a href="" style={{ textDecoration: "none" }}>
                 <button className="button p-button">
                   <img src={GoTo} />
                   Go To
